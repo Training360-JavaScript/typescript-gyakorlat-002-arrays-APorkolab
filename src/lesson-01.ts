@@ -5,7 +5,7 @@ export default class calculator {
     // Hozd létre a következő változókat a megfelelő típusannotációval.
     
     /** @type {Array} points - számok tömbje, 1-től 10-ig egyesével. */
-
+    points: number[] = [1,2,3,4,5,6,7,8,9,10];
 
     /** 
      * A tömb minden eleme legyen egy objektum, amely egy felhasználót reprezentál.
@@ -13,7 +13,10 @@ export default class calculator {
      * Inicializáld a tömböt, legyen legalább két eleme.
      * @type {Array} users - minden elem egy felhasználó.
      */
-
+     users: Array<{name: string, email: string}> = [
+        {name: "Babiagorai Riparievich Metell", email: "tarara@tarara.hu"},
+        {name: "Jim Tom", email: "jimtom@tarara.hu"},
+    ];
     
     /** 
      * A tömb minden eleme legyen egy objektum, amely egy terméket reprezentál.
@@ -22,12 +25,15 @@ export default class calculator {
      * Inicializáld a tömböt, legyen legalább két eleme.
      * @type {Array} products - minden elem egy termék.
      */    
-
+     products: Array<{name: string, price: number, stock: number, active: boolean}> = [
+         {name: "Dogmeat", price: 33, stock: 10, active: true},
+         {name: "Pickles", price: 22, stock: 54, active: false}
+     ];
     
     /** 
      * Inicializálj egy tuple típust, azaz adj neki értéket is.
      * @type {Tuple} role - number, string, boolean. 
      */
-
+     role: [number, string, boolean] = [1, "Steve", true];
 
 }
